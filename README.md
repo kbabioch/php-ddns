@@ -33,6 +33,8 @@ directory. Then the temporary scratch space is removed, including the CA's
 private key. This, in essence, renders the CA useless, which is the point of
 this concept.
 
+IP detection as described on SPDNS ...
+
 ## CONTRIBUTIONS
 
 The source code is maintained using git and lives over at [github.com][repo].
