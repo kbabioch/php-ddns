@@ -1,0 +1,11 @@
+Table dyndns {
+  dyndns_id int [pk, increment]
+  hostname varchar [not null, unique, note: "The registered hostname"]
+  ip_address varchar [note: "IP address of the hostname"]
+  auth_username varchar [not null, note: "Basic authentication: username"]
+  auth_password varchar [not null, note: "Basic authentication: encrypted password"]
+  auth_password_salt varchar [not null, note: "Basic authentication: password salt"]
+  tsig_key_algorithm varchar [note: "Name of the key algorithm. Valid choices are hmac-md5, hmac-sha1, hmac-sha224, hmac-sha256, hmac-sha384, or hmac-sha512"]
+  tsig_keyname varchar [note: "TSIG authentication key"]
+  tsig_secret varchar [note: "TSIG authentication secret"]
+}
