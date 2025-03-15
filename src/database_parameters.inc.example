@@ -1,0 +1,8 @@
+<?php
+
+$db_connectstring = 'pgsql:host=localhost;dbname=web';
+$db_user = 'webuser';
+$db_password = 'ddns-secret-password';
+
+?>
+
