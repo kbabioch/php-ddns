@@ -1,0 +1,8 @@
+# backup files
+*~
+
+# log files
+dbml-error.log
+
+# credential files
+database_parameters.inc
