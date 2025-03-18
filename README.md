@@ -39,7 +39,7 @@ You can generate a TSIG key using `tsig-keygen`:
 
 ```
 tsig-keygen -a hmac-sha256 webserver
-``
+```
 
 The key should be put into the configuration (e.g. `named.conf`):
 
@@ -48,9 +48,11 @@ key "webserver" {
         algorithm hmac-sha256;
         secret "XYP+vYM+xytAaAIMyKuHKy6roW6u/YD/LMN2MFuno+4=";
 };
+```
 
 Also, define a zone that should be managed by this script by putting the following in `named.conf`:
 
+```
 zone "dyn.example.de" IN {
     type master;
     file "zones/dyn.example.com.zone";
