@@ -261,7 +261,7 @@ NSUPDATE;
 
     if ($ret === 0) {
 
-        echo 'success';
+        echo 'good';
 
     } else {
 
